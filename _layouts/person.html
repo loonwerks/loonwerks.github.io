@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<div class="person">
+  <header class="person-header">
+    <h1 class="person-name">{{ page.fullname }}</h1>
+    {% if page.picture %}<img src="{{ page.picture }}"/>{% endif %}
+    <h2 class="person-position">{{ page.position }}</h2>
+    <span class="person-email"><a href="mailto:{{ page.email }}">{{ page.email }}</a></span>
+  </header>
+
+  <article class="person-content">
+    {{ content }}
+  </article>
+</div>
