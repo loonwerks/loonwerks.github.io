@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+
+{% assign sorted_publications = site.pages | where: 'layout', 'publication' | sort: 'date' | reverse %}
+
 <div class="person">
   <header class="person-header">
     <h1 class="person-name">{{ page.fullname }}</h1>
@@ -12,4 +15,13 @@ layout: default
   <article class="person-content">
     {{ content }}
   </article>
+
+  <h2>Publications</h2>
+  <ul>
+  {% for pub in sorted_publications %}
+    {% if pub.authors contains page.fullname %}
+      <li><a href="{{ pub.url }}">{{ pub.title }}, {{ pub.authors }}, {{ pub.info }}</a></li>
+    {% endif %}
+  {% endfor %}
+  </ul>
 </div>

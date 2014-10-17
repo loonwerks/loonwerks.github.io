@@ -2,7 +2,14 @@
 layout: default
 ---
 
+{% assign sorted_publications = site.pages | where: 'layout', 'publication' | sort: 'date' | reverse %}
+
 <div class="publications">
   <h1>Publications</h1>
+  <ul>
+  {% for pub in sorted_publications %}
+    <li><a href="{{ pub.name }}">{{ pub.title }}, {{ pub.authors }}, {{ pub.info }}</a></li>
+  {% endfor %}
+  </ul>
 </div>
 
