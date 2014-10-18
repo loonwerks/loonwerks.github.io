@@ -1,12 +1,11 @@
 ---
 layout: default
 ---
-{% assign sorted_publications = site.pages | where: 'layout', 'publication' | sort: 'date' | reverse %}
+{% include sorted-elements.html %}
 
 <div class="project">
   <header class="project-header">
     <h1 class="project-name">{{ page.shortname }}: {{ page.longname }}</h1>
-    <img src="{{ page.logo }}" />
   </header>
 
   <article class="project-content">

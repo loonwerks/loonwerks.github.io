@@ -1,16 +1,19 @@
+{% include sorted-elements.html %}
+
 <div class="sidebar">
   <ul class="menu">
-    <li>People
+    <li><a href="/people">People</a>
       <ul class="list">
-        <li>{{ site.darren-cofer }}</li>
-        <li>{{ site.john-backes }}</li>
-        <li>{{ site.andrew-gacek }}</li>
-        <li>{{ site.konrad-slind }}</li>
+        {% for person in sorted_people %}
+        <li><a href="{{ person.url }}">{{ person.fullname }}</a></li>
+        {% endfor %}
       </ul>
     </li>
-    <li>Projects
+    <li><a href="/projects">Projects</a>
       <ul class="list">
-        <li>{{ site.smaccm }}</li>
+        {% for project in sorted_projects %}
+        <li><a href="{{ project.url }}">{{ project.shortname }}</a></li>
+        {% endfor %}
       </ul>
     </li>
     <li>

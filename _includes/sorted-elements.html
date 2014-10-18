@@ -1,0 +1,3 @@
+{% assign sorted_people = site.pages | where: 'layout', 'person' | sort: 'sort' %}
+{% assign sorted_projects = site.pages | where: 'layout', 'project' | sort: 'sort' %}
+{% assign sorted_publications = site.pages | where: 'layout', 'publication' | sort: 'sort' | reverse %}

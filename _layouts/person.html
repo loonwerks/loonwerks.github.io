@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% assign sorted_publications = site.pages | where: 'layout', 'publication' | sort: 'date' | reverse %}
+{% include sorted-elements.html %}
 
 <div class="person">
   <header class="person-header">

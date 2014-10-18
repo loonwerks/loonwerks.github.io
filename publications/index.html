@@ -3,7 +3,7 @@ layout: default
 title: Publications
 ---
 
-{% assign sorted_publications = site.pages | where: 'layout', 'publication' | sort: 'date' | reverse %}
+{% include sorted-elements.html %}
 
 <div class="publications">
   <h1>Publications</h1>

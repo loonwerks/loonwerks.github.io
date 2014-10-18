@@ -1,0 +1,18 @@
+---
+layout: default
+title: Projects
+---
+
+{% include sorted-elements.html %}
+
+<div class="projects">
+  <h1>Projects</h1>
+  <ul>
+  {% for project in sorted_projects %}
+    <li>
+    <a href="{{ project.url }}">{{ project.shortname }}</a>: {{ project.longname }}
+    </li>
+  {% endfor %}
+  </ul>
+</div>
+

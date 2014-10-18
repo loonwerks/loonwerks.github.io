@@ -1,0 +1,18 @@
+---
+layout: default
+title: People
+---
+
+{% include sorted-elements.html %}
+
+<div class="people">
+  <h1>People</h1>
+  <ul>
+  {% for person in sorted_people %}
+    <li>
+    <a href="{{ person.url }}">{{ person.fullname }}</a> &mdash; {{ person.position }}
+    </li>
+  {% endfor %}
+  </ul>
+</div>
+
