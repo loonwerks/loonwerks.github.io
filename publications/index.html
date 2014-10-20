@@ -7,9 +7,19 @@ title: Publications
 
 <div class="publications">
   <h1>Publications</h1>
-  <ul>
+  {% assign pyear = '' %}
   {% for pub in sorted_publications %}
+    {% capture year %}{{ pub.date | date: '%Y' }}{% endcapture %}
+
+    {% if year != pyear %}
+      {% if pyear != '' %}
+      </ul>
+      {% endif %}
+      <b>{{ year }}</b>
+      <ul>
+    {% endif %}
     {% include pub-ref.html %}
+    {% assign pyear = year %}
   {% endfor %}
   </ul>
 </div>
