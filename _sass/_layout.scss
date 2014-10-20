@@ -255,8 +255,61 @@
  */
 .sidebar {
     float: left;
+    padding-right: 20px;
 
     ul {
         list-style-type: none;
     }
+}
+
+/**
+ * Person pages
+ */
+.person {
+    display: block;
+
+    .picture {
+        float: left;
+        margin-bottom: 20px;
+    }
+
+    .data {
+        float: left;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    article {
+        clear: left;
+        margin-bottom: 20px;
+    }
+}
+
+/**
+ * People index
+ */
+
+.people {
+    .summary {
+        overflow: hidden;
+        margin-bottom: 30px;
+
+        img {
+            float: left;
+            width: 120px;
+        }
+        
+        .text {
+            float: left;
+            padding-top: 5px;
+            padding-left: 30px;
+        }
+    }
+}
+
+/**
+ * Publications index
+ */
+
+.publications {
 }
