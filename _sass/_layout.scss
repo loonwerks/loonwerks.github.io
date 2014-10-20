@@ -267,21 +267,22 @@
  */
 .person {
     display: block;
-}
 
-.person-picture {
-    float: left;
-    margin-bottom: 20px;
-}
+    .picture {
+        float: left;
+        margin-bottom: 20px;
+    }
 
-.person-content {
-    clear: left;
-}
+    .data {
+        float: left;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
 
-.person-data {
-    float: left;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    article {
+        clear: left;
+        margin-bottom: 20px;
+    }
 }
 
 /**
