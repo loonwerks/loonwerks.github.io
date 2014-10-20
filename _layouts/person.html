@@ -19,7 +19,7 @@ layout: default
   <h2>Publications</h2>
   <ul>
   {% for pub in sorted_publications %}
-    {% if pub.authors contains page.fullname %}
+    {% if pub.authors contains page.author_key %}
       {% include pub-ref.html %}
     {% endif %}
   {% endfor %}
