@@ -6,13 +6,17 @@ title: "Loonwerks: People"
 {% include sorted-elements.html %}
 
 <div class="people">
-  <h1>People</h1>
-  <ul>
   {% for person in sorted_people %}
-    <li>
-    <a href="{{ person.url }}">{{ person.fullname }}</a> &mdash; {{ person.position }}
-    </li>
+  <div class="summary">
+    <a href="{{ person.url }}">
+      <img src="{{ person.picture }}" height="100" style="max-width: 120px" />
+    </a>
+    <div class="text">
+      <div class="name"><a href="{{ person.url }}">{{ person.fullname }}</a></div>
+      <div class="position">{{ person.position }}</div>
+      <div class="email"><a href="mailto:{{ person.email }}">{{ person.email }}</a></div>
+    </div>
+  </div>
   {% endfor %}
-  </ul>
 </div>
 
