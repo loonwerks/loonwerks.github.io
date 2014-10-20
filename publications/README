@@ -1,0 +1,49 @@
+Each publication is represented by a single file in the publications directory.
+
+The file should be all lowercase and have "first author's last name",
+"year of publication", and "venue". Examples: gacek2014hilt.html,
+slind2012tacas.html, whalen2013ieee.html.
+
+The file begins with metadata between the lines --- and ---.
+
+Each metadata field must be on a single line (no wrapping).
+
+If the data contains a colon, the whole data must be escaped using
+double quotes. This is almost always the case for links since they
+have a http://
+
+The file must have the metadata "layout: publication" to be picked up
+as a publication.
+
+The order of the metadata does not matter, but at least make "layout"
+first.
+
+The authors data is an array of author names. We are using the format
+of abbreviated first names and full last names. Examples: A. Gacek, J.
+Backes.
+
+The title goes in the "title" field. We are going to make only the
+very first letter capitalized (unless there are proper names as well
+in the title).
+
+The "info" field contains publication information. In general,
+references will appear as "<title>. <authors>. <info>."
+
+The "link" field contains a link to the pdf or whatever. We will also
+host pdfs locally in the directory publications/pdf with file names
+matching the html file names, e.g. slind2012tacas.pdf
+
+The "date" field is used for sorting and must have the format
+YYYY-MM-DD HH:MM:SS. The date must be valid, but when we don't care
+just say 2014-01-01 00:00:00 or something. This only matters for
+sorting, and perhaps we'll group publications by year in some views as
+well.
+
+The "projects" field is an array of relevant projects on which the
+publication should appear. This is keyed based on the shortname of the
+project, such as SMACCM or Guardol. This is the name of the project as
+it appears in the sidebar of the website.
+
+Please that your publications look correct on the website and show up
+in the right spots. If not, you probably messed up the metadata. Check
+again for unescaped colons or misspellings.
