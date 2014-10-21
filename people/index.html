@@ -5,11 +5,11 @@ title: "Loonwerks: People"
 
 {% include sorted-elements.html %}
 
-<div class="people">
+<div id="people">
   {% for person in sorted_people %}
   <div class="summary">
     <a href="{{ person.url }}">
-      <img src="{{ person.picture }}" height="100" style="max-width: 120px" />
+      <img src="{{ person.picture }}" />
     </a>
     <div class="text">
       <div class="name"><a href="{{ person.url }}">{{ person.fullname }}</a></div>

@@ -256,6 +256,7 @@
 #content {
     position: relative;
     width: 100%;
+    min-height: 300px;
     padding: 10px 0;
 
     #sidebar {
@@ -281,15 +282,19 @@
 /**
  * Person pages
  */
-.person {
+#person {
     display: block;
 
-    .picture {
+    #picture {
         float: left;
         margin-bottom: 20px;
+
+        img {
+            height: 250px;
+        }
     }
 
-    .data {
+    #data {
         float: left;
         margin-left: 20px;
         margin-bottom: 20px;
@@ -305,14 +310,14 @@
  * People index
  */
 
-.people {
+#people {
     .summary {
         overflow: hidden;
         margin-bottom: 30px;
 
         img {
             float: left;
-            width: 120px;
+            height: 100px;
         }
         
         .text {
