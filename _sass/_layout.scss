@@ -17,7 +17,7 @@
     }
 
     a {
-        color: black;
+        color: $text-color;
 
         &:hover {
             text-decoration: none;
@@ -112,8 +112,29 @@
 }
 
 /**
- * Publications index
+ * Publications listings
  */
 
 .publications {
+    ul {
+        list-style-type: none;
+        
+        li {
+            border-bottom: 1px dotted gray;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        a {
+            display: block;
+            padding: 5px 5px;
+        }
+        
+        a:hover {
+            text-decoration: none;
+            background: $grey-color-light;
+        }
+    }
 }
