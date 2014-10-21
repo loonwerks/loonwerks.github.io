@@ -6,11 +6,13 @@ layout: default
 
 <div id="person">
   <header>
-    {% if page.picture %}<div id="picture"><img src="{{ page.picture }}"/></div>{% endif %}
-    <div id="data">
-      <h1 id="name">{{ page.fullname }}</h1>
-      <h2 id="position">{{ page.position }}</h2>
-      <span id="email"><a href="mailto:{{ page.email }}">{{ page.email }}</a></span>
+    <div id="summary">
+      {% if page.picture %}<div id="picture"><img src="{{ page.picture }}"/></div>{% endif %}
+      <div id="data">
+        <h1 id="name">{{ page.fullname }}</h1>
+        <h2 id="position">{{ page.position }}</h2>
+        <span id="email"><a href="mailto:{{ page.email }}">{{ page.email }}</a></span>
+      </div>
     </div>
   </header>
 

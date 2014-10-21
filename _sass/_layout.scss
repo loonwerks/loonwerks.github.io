@@ -66,25 +66,24 @@
  * Person pages
  */
 #person {
-    display: block;
-
-    #picture {
-        float: left;
-        margin-bottom: 20px;
+    #summary {
+        overflow: hidden;
+        width: 800px;
 
         img {
+            float: left;
+            margin-bottom: 20px;
             height: 250px;
+        }
+
+        #data {
+            float: left;
+            padding-left: 30px;
         }
     }
 
-    #data {
-        float: left;
-        margin-left: 20px;
-        margin-bottom: 20px;
-    }
-
     article {
-        clear: left;
+        clear: both;
         margin-bottom: 20px;
     }
 }
