@@ -143,3 +143,26 @@
         }
     }
 }
+
+/**
+ * Publication details
+ */
+
+.publication {
+    #title {
+        font-size: $base-font-size * 1.5;
+    }
+
+    #authors {
+        font-size: $base-font-size;
+    }
+
+    #info {
+        font-size: $small-font-size;
+    }
+
+    #abstract {
+        border-top: 1px dotted gray;
+        padding-top: 15px;
+    }
+}
