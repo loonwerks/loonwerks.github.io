@@ -63,9 +63,14 @@
         position: relative;
         margin-left: 200px;
         margin-right: 50px;
+
+        padding: 30px;
+
+        box-shadow: 5px 5px 10px 3px rgba(117,117,117,1);
+        -webkit-box-shadow: 5px 5px 10px 3px rgba(117,117,117,1);
+        -moz-box-shadow: 5px 5px 10px 3px rgba(117,117,117,1);
     }
 }
-
 
 /**
  * Person pages
