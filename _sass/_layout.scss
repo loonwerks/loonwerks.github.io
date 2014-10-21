@@ -251,16 +251,32 @@
 }
 
 /**
- * Sidebar
+ * Default layout
  */
-.sidebar {
-    float: left;
-    padding-right: 20px;
+#content {
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
 
-    ul {
-        list-style-type: none;
+    #sidebar {
+        position: absolute;
+        top: 10px;
+        bottom: 0;
+        left: 0;
+        width: 200px;
+        
+        ul {
+            list-style-type: none;
+        }
+    }
+
+    #main {
+        position: relative;
+        margin-left: 200px;
+        margin-right: 50px;
     }
 }
+
 
 /**
  * Person pages
