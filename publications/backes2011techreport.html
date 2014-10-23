@@ -1,0 +1,31 @@
+---
+layout: publication
+authors: [J. Backes, B. Fett, M. Riedel]
+title: "The Analysis and Mapping of Cyclic Circuits with Boolean Satisfiability"
+info: Technical Report. 2011
+link: "pdf/backes2011techreport.pdf"
+date: 2011-11-01 00:00:00
+---
+The accepted wisdom is that combinational circuits
+must have
+acyclic
+(i.e., loop-free or feed-forward) topologies. And
+yet simple examples suggest that this need not be so. Prior work
+advocated the design of
+cyclic
+combinational circuits (i.e., circuits
+with loops or feedback paths). A methodology was proposed
+for optimizing circuits by introducing cycles at the technology-
+independent stage of synthesis.
+Efficient synthesis is predicated on efficient analysis. Prior
+methods for analysis were based on binary decision diagrams
+(BDDs). In this paper, a much more efficient technique is
+proposed based on Boolean satisfiability (SAT). Validation is
+performed both at a network level, in terms of functional
+dependencies, as well as at a gate level, after mapping to a
+library. When mapping breaks the validity of a combinational
+circuit, SAT-based analysis returns satisfying assignments; these
+assignments are used to modify the mapping in order to ensure
+that the circuit remains combinational. The effectiveness of the
+analysis and mapping algorithms is demonstrated on standard
+benchmarks.
