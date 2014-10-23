@@ -29,9 +29,14 @@ in the title).
 The "info" field contains publication information. In general,
 references will appear as "<title>. <authors>. <info>."
 
-The "link" field contains a link to the pdf or whatever. We will also
-host pdfs locally in the directory publications/pdf with file names
-matching the html file names, e.g. slind2012tacas.pdf
+The "link" field contains a link to the pdf. We will also host pdfs
+locally in the directory publications/pdf with file names matching the
+html file names, e.g. slind2012tacas.pdf
+
+The "slides" field is optional and contains a link to the slides (pdf
+preferred). We will also host slides locally in the directory
+publications/slides with file names matching the html files names,
+e.g. slide2012tacas.pdf
 
 The "date" field is used for sorting and must have the format
 YYYY-MM-DD HH:MM:SS. The date must be valid, but when we don't care
