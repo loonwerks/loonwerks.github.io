@@ -17,7 +17,9 @@ title: "Loonwerks: People"
       <div class="email"><a href="mailto:{{ person.email }}">{{ person.email }}</a></div>
     </div>
   </div>
+  {% if forloop.last == false %}
   <div class="separator"></div>
+  {% endif %}
   {% endfor %}
 </div>
 

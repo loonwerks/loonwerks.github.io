@@ -3,7 +3,7 @@
  */
 .site-header {
     border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
+    border-bottom: 2px solid $grey-color-light;
     margin-bottom: 10px;
 
     // Positioning context for the mobile navigation icon
@@ -109,9 +109,9 @@
 
 #people {
     .separator {
-        margin-top: -20px;
-        margin-bottom: 20px;
-        border-bottom: 1px dotted gray;
+        margin-top: -15px;
+        margin-bottom: 15px;
+        border-bottom: 2px solid $grey-color-light;
     }
 
     .summary {
@@ -147,7 +147,7 @@
         list-style-type: none;
         
         li {
-            border-bottom: 1px dotted gray;
+            border-bottom: 2px solid $grey-color-light;
         }
 
         li:last-child {
@@ -195,7 +195,7 @@
 
     #abstract {
         clear: both;
-        border-top: 1px dotted gray;
+        border-top: 2px solid $grey-color-light;
         padding-top: 15px;
     }
 }
