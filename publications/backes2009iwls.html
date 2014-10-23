@@ -1,0 +1,28 @@
+---
+layout: publication
+authors: [J. Backes]
+title: "The Synthesis of Cyclic Dependencies with Craig Interpolation"
+info: Proceedings of the International Workshop on Logic Synthesis, Berkeley, CA. 2009
+link: "pdf/backes2009iwls.pdf"
+date: 2008-11-01 00:00:00
+---
+The accepted wisdom is that combinational circuits
+must have acyclic
+(i.e., loop-free or feed-forward) topologies.
+And yet simple examples suggest that this need not be so. In
+previous work, we advocated the design of
+cyclic
+combinational
+circuits (i.e., circuits with loops or feedback paths). We proposed
+a methodology for synthesizing such circuits and demonstrated
+that it produces significant improvements in area and in delay.
+Cycles are introduced in the restructuring and minimization
+phases, at the level of functional dependencies. In the original
+formulation, the functional dependencies were obtained through
+SOP minimization with the Berkeley SIS package; validation
+was performed with BDD-based analysis. In recent work, we
+presented a SAT-based technique for validation. In this paper, we
+present a SAT-based method for synthesizing cyclic dependencies,
+through Craig interpolation. While full synthesis results are
+not presented in this work, it is our plan to incorporate this
+methodology into a full synthesis routine soon.
