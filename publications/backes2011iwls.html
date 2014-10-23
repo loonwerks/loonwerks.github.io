@@ -1,0 +1,32 @@
+---
+layout: publication
+authors: [J. Backes]
+title: "Resolution Proofs as a Data Structure for Logic Synthesis"
+info: Proceedings of the International Workshop on Logic Synthesis, La Jolla, CA. 2011
+link: "pdf/backes2011iwls.pdf"
+date: 2011-11-01 00:00:00
+---
+the results of modern synthesis tools are heavily
+influenced by the initial structure of the designs they are given.
+Many synthesis tools use And-Inverter Graphs (AIGs) as the
+underlying representation in the technology-independent phase
+of synthesis. Generally, AIGs can be compacted through a series
+of operations that merge equivalent nodes. Proving nodes to be
+equivalent can be a done with efficient SAT-based algorithms.
+However, when an AIG consists of very sparse logic, compaction
+is ineffective; few equivalent nodes are found.
+Recently, techniques for generating functional dependencies
+via Craig Interpolation have been proposed. Such methods first
+generate a resolution proof from a SAT instance. Interpolation
+is performed on the resolution proof to generate the dependency
+function. Unlike nodes in an AIG, determining whether an
+equivalent resolution node can be generated from other resolution
+nodes is a simple task. In this work, we study the use of
+resolution proofs as an underlying data structure for performing
+technology-independent synthesis, as opposed to just the front-
+end step. In order to represent multiple functions, we merge
+separate resolution proofs into a single, monolithic resolution
+proof and then perform restructuring operations. We analyze
+the effectiveness of our method on standard benchmark circuits.
+The results suggest that resolution proofs could be a very effective
+data structure for representing multiple target functions.
