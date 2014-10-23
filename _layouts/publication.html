@@ -12,6 +12,12 @@ layout: default
     {% endfor %}
     </h2>
     <h3 id="info">{{ page.info }}</h3>
+    {% if page.slides %}
+    <div id="slides">
+      <a href="{{ page.slides }}">Slides</a>
+      <a href="{{ page.slides }}"><img src="/images/slides.png" /></a>
+    </div>
+    {% endif %}
     <div id="abstract">
       {{ content }}
     </div>

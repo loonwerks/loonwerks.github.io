@@ -168,17 +168,28 @@
 .publication {
     #title {
         font-size: $base-font-size * 1.5;
+        float: left;
     }
 
     #authors {
+        clear: left;
+        float: left;
         font-size: $base-font-size;
     }
 
     #info {
+        clear: left;
+        float: left;
         font-size: $small-font-size;
     }
 
+    #slides {
+        font-size: $base-font-size;
+        float: right;
+    }
+
     #abstract {
+        clear: both;
         border-top: 1px dotted gray;
         padding-top: 15px;
     }
