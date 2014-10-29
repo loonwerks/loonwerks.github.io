@@ -35,11 +35,6 @@
 /**
  * Default layout
  */
-#loonwerks-logo {
-    img {
-    }
-}
-
 #content {
     position: relative;
     width: 100%;
@@ -67,6 +62,13 @@
         margin-right: 50px;
 
         padding: 0px 30px;
+
+        #disclaimer {
+            margin-top: 50px;
+            margin-bottom: -50px;
+            font-size: $small-font-size * 0.8;
+            color: lighten($text-color, 60%);
+        }
     }
 }
 
