@@ -1,0 +1,22 @@
+---
+layout: publication
+authors: [J. Backes, S. Person, N. Rungta, O. Tkachuk]
+title: "Regression Verification Using Impact Summaries"
+info: In proceedings of the 20th International SPIN Symposium on Model Checking of Software, 2013
+link: "pdf/backes2013spin.pdf"
+date: 2013-03-01 00:00:00
+---
+Regression verification techniques are used to prove equivalence of closely related program versions. Existing regression verification
+techniques leverage the similarities between program versions to help improve analysis scalability by using abstraction and decomposition tech-
+niques. These techniques are sound but not complete. In this work, we
+propose an alternative technique to improve scalability of regression verification that leverages change impact information to partition program
+execution behaviors. Program behaviors in each version are partitioned
+into (a) behaviors impacted by the changes and (b) behaviors not impacted (unimpacted) by the changes. Our approach uses a combination of
+static analysis and symbolic execution to generate summaries of program
+behaviors impacted by the differences. We show in this work that checking equivalence of behaviors in two program versions reduces to checking
+equivalence of just the impacted behaviors. We prove that our approach
+is both sound and complete for sequential programs, with respect to the
+depth bound of symbolic execution; furthermore, our approach can be
+used with existing approaches to better leverage the similarities between
+program versions and improve analysis scalability. We evaluate our technique on a set of sequential C artifacts and present preliminary results.
+
