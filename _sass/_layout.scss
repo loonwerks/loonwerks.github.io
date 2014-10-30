@@ -110,6 +110,13 @@
     article {
         clear: both;
         margin-bottom: 20px;
+
+        #project-logo {
+            float: right;
+            img {
+                height: 200px;
+            }
+        }
     }
 }
 
