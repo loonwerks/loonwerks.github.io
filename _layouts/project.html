@@ -12,14 +12,23 @@ layout: default
     {{ content }}
   </article>
 
-  <div class="publications">
-    <h2>Publications</h2>
-    <ul>
-      {% for pub in sorted_publications %}
-        {% if pub.projects contains page.shortname %}
-          {% include pub-ref.html %}
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </div>
+  {% assign has_publications = false %}
+  {% for pub in sorted_publications %}
+    {% if pub.projects contains page.shortname %}
+      {% assign has_publications = true %}
+    {% endif %}
+  {% endfor %}
+
+  {% if has_publications %}
+    <div class="publications">
+      <h2>Publications</h2>
+      <ul>
+        {% for pub in sorted_publications %}
+          {% if pub.projects contains page.shortname %}
+            {% include pub-ref.html %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
 </div>
