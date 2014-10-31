@@ -21,4 +21,24 @@ layout: default
   <article>
     {{ content }}
   </article>
+
+  {% assign has_publications = false %}
+  {% for pub in sorted_publications %}
+    {% if pub.tools contains page.toolname %}
+      {% assign has_publications = true %}
+    {% endif %}
+  {% endfor %}
+
+  {% if has_publications %}
+    <div class="publications">
+      <h2>Publications</h2>
+      <ul>
+        {% for pub in sorted_publications %}
+          {% if pub.tools contains page.toolname %}
+            {% include pub-ref.html %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
 </div>

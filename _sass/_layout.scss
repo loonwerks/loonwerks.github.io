@@ -50,6 +50,8 @@
 
         padding-top: 20px;
         background: $grey-color-light;
+
+        min-height: 500px;
         
         ul {
             list-style-type: none;
@@ -144,6 +146,7 @@
         clear: both;
         border-top: 2px solid $grey-color-light;
         padding-top: 30px;
+        padding-bottom: 30px;
     }
 }
 
