@@ -121,6 +121,33 @@
 }
 
 /**
+ * Tool pages
+ */
+#tool {
+    header {
+        #text {
+            float: left;
+        }
+
+        #download {
+            float: right;
+            padding-bottom: 10px;
+        }
+
+        #sourcecode {
+            clear: right;
+            float: right;
+        }
+    }
+
+    article {
+        clear: both;
+        border-top: 2px solid $grey-color-light;
+        padding-top: 30px;
+    }
+}
+
+/**
  * People index
  */
 #people {

@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+{% include sorted-elements.html %}
+
+<div id="tool">
+  <header>
+    <div id="text">
+      <h1 id="name">{{ page.toolname }}</h1>
+      <h2 id="summary">{{ page.summary }}</h2>
+    </div>
+    <div id="download">
+      <a href="{{ page.download }}">Download</a> <a href="{{ page.download }}"><img src="/images/download.png" /></a>
+    </div>
+    <div id="sourcecode">
+      <a href="{{ page.sourcecode }}">Source Code</a> <a href="{{ page.sourcecode }}"><img src="/images/sourcecode.png" /></a>
+    </div>
+  </header>
+
+  <article>
+    {{ content }}
+  </article>
+</div>

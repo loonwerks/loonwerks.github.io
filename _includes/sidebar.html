@@ -16,6 +16,13 @@
         {% endfor %}
       </ul>
     </li>
+    <li><a href="/tools/">Tools</a>
+      <ul>
+        {% for tool in sorted_tools %}
+        <li><a href="{{ tool.url }}">{{ tool.toolname }}</a></li>
+        {% endfor %}
+      </ul>
+    </li>
     <li>
       <a href="/publications/">Publications</a>
     </li>
