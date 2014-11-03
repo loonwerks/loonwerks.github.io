@@ -35,10 +35,15 @@
 /**
  * Default layout
  */
+#loonwerks-logo {
+    min-width: 700px;
+}
+
 #content {
     position: relative;
     width: 100%;
     min-height: 300px;
+    max-width: 1000px;
     padding: 10px 0;
 
     #sidebar {
@@ -61,6 +66,7 @@
     #main {
         position: relative;
         margin-left: 200px;
+        min-width: 500px;
 
         padding: 0px 30px;
 
