@@ -1,7 +1,7 @@
 ---
 layout: tool
 toolname: JKind
-summary: A k-induction model checker for Lustre
+summary: An infinite-state model checker for safety properties in Lustre
 sourcecode: "https://github.com/agacek/jkind"
 download: "https://github.com/agacek/jkind/releases"
 ---
@@ -10,10 +10,11 @@ download: "https://github.com/agacek/jkind/releases"
 JKind is a tool for verifying safety properties of synchronous
 systems. Systems and their properties are expressed in
 the <a href="http://en.wikipedia.org/wiki/Lustre_(programming_language)">Lustre</a>
-language. Verification is based on k-induction using a back-end SMT
-solver. A verified property is guaranteed to be true for all runs of
-the system. A falsified property is reported with an explicit
-counterexample demonstrating the property violation.
+language. Verification is based on k-induction and property directed
+reachability using a back-end SMT solver. A verified property is
+guaranteed to be true for all runs of the system. A falsified property
+is reported with an explicit counterexample demonstrating the property
+violation.
 </p>
 
 <p>
@@ -27,11 +28,13 @@ checkers.
 </p>
 
 <p>
-JKind requires at least Java 7 and an SMT solver. JKind
+JKind requires at least Java 8 and an SMT solver. JKind
 uses <a href="http://yices.csl.sri.com/download-yices1.shtml">Yices
 (version 1)</a> by default and also supports
-<a href="http://cvc4.cs.nyu.edu/web/">CVC4</a>, <a href="http://z3.codeplex.com/">Z3</a>, and
-<a href="http://yices.csl.sri.com/index.shtml">Yices 2</a>.
+<a href="http://cvc4.cs.nyu.edu/web/">CVC4</a>, <a href="http://z3.codeplex.com/">Z3</a>, 
+<a href="http://yices.csl.sri.com/index.shtml">Yices 2</a>,
+and <a href="http://mathsat.fbk.eu/">MathSAT</a>,
+and <a href="http://ultimate.informatik.uni-freiburg.de/smtinterpol/">SMTInterpol</a>.
 </p>
 
 <p>
