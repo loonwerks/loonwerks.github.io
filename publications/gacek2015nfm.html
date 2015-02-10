@@ -1,0 +1,32 @@
+---
+layout: publication
+authors: [A. Gacek, A. Katis, M. Whalen, J. Backes, D. Cofer]
+title: "Towards realizability checking of contracts using theories"
+info: NASA Formal Methods, 2015
+link: "/publications/pdf/gacek2015nfm.pdf"
+projects: [SMACCM, CVFCS]
+tools: [JKind, AGREE]
+date: 2015-01-01 00:00:00
+---
+
+<i>Virtual integration</i> techniques focus on building architectural
+models of systems that can be analyzed early in the design cycle to
+try to lower cost, reduce risk, and improve quality of complex
+embedded systems. Given appropriate architectural descriptions and
+compositional reasoning rules, these techniques can be used to prove
+important safety properties about the architecture prior to system
+construction. Such proofs build from "leaf-level" assume/guarantee
+component contracts through architectural layers towards top-level
+safety properties. The proofs are built upon the premise that each
+leaf-level component contract is <i>realizable</i>; i.e., it is
+possible to construct a component such that for any input allowed by
+the contract assumptions, there is some output value that the
+component can produce that satisfies the contract guarantees. Without
+engineering support it is all too easy to write leaf-level components
+that can't be realized. Realizability checking for propositional
+contracts has been well-studied for many years, both for component
+synthesis and checking correctness of temporal logic requirements.
+However, checking realizability for contracts involving infinite
+theories is still an open problem. In this paper, we describe a new
+approach for checking realizability of contracts involving theories
+and demonstrate its usefulness on several examples.
