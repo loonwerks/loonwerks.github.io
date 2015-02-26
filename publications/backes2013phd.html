@@ -7,15 +7,15 @@ link: "pdf/backes2013phd.pdf"
 slides: "slides/backes2013phd.pptx"
 date: 2013-03-01 00:00:00
 ---
-Boolean satisability (SAT) was the rst problem to be proven to be NP-Complete.
+Boolean satisfiability (SAT) was the first problem to be proven to be NP-Complete.
 The proof, provided by Stephen Cook in 1971, demonstrated that inputs accepted by
 a non-deterministic Turing machine can be described by satisfying assignments of a
 Boolean formula. The reduction to SAT feels natural for a wealth of decision problems;
 this has motivated an immense amount of research into heuristics for solving SAT instances quickly. Over the past decade the performance of SAT solvers has improved
 tremendously, and as a consequence, real-world problems that were once thought to be
 intractable are now feasible in many cases.
-In this thesis we discuss how some problems in logic synthesis and verication can be
-solved with Boolean satisability. The dissertation begins by discussing Cyclic Combinational Circuits. Cyclic Combinational Circuits are logic circuits that contain feedback,
+In this thesis we discuss how some problems in logic synthesis and verification can be
+solved with Boolean satisfiability. The dissertation begins by discussing Cyclic Combinational Circuits. Cyclic Combinational Circuits are logic circuits that contain feedback,
 but exhibit no state behavior. Many functions can be implemented with fewer gates
 using a cyclic topology rather than an acyclic topology. A pivotal step in synthesizing
 these circuits is proving whether or not the resulting structure is actually combinational,
@@ -23,11 +23,11 @@ and if not, how to modify the circuit to behave properly. This analysis can be e
 cast as an instance of SAT. Furthermore, this thesis demonstrates how modern SAT-
 Based synthesis techniques can be used to generate cyclic structures, rather than just
 analyze them.
-These SAT-Based synthesis techniques rely on augmenting proofs of unsatisability
+These SAT-Based synthesis techniques rely on augmenting proofs of unsatisfiability
 to generate circuit structures. These structures, called Craig Interpolants, and the
 proofs they are generated from are the focus of the second portion of this dissertation.
 Techniques are proposed for reducing the size of these interpolants, and then the use of
-proofs of unsatisability as an underlying data structure for synthesis is advocated.
+proofs of unsatisfiability as an underlying data structure for synthesis is advocated.
 Finally, the last portion of this thesis discusses some improvements to a new model
 checking algorithm known as Property Directed Reachability (PDR). This algorithm iteratively solves SAT instances representing discrete time frames of a sequential circuit
 in order to demonstrate that a state invariant exists.
