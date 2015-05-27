@@ -1,4 +1,5 @@
-{% assign sorted_people = site.pages | where: 'layout', 'person' | sort: 'sort' %}
+{% assign sorted_loonwerks = site.pages | where: 'layout', 'person' | where: 'location', 'loonwerks' | sort: 'sort' %}
+{% assign sorted_cornwerks = site.pages | where: 'layout', 'person' | where: 'location', 'cornwerks' | sort: 'sort' %}
 {% assign sorted_projects = site.pages | where: 'layout', 'project' | sort: 'sort' | reverse %}
 {% assign sorted_tools = site.pages | where: 'layout', 'tool' | sort: 'title' %}
 {% assign sorted_publications = site.pages | where: 'layout', 'publication' | sort: 'date' | reverse %}
