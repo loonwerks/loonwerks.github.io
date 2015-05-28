@@ -1,7 +1,11 @@
 <header class="site-header">
   <div id="loonwerks-logo">
     <a href="/">
-      <img src="/images/loonwerks.png" />
+     {% if page.location == "cornwerks" %}
+     <img src="/images/cornwerks.png" />
+     {% else %}
+     <img src="/images/loonwerks.png" />
+     {% endif %}
     </a>
   </div>
 </header>
