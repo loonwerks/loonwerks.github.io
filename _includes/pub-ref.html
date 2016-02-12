@@ -1,1 +1,1 @@
-<li><a href="{{ pub.url }}"><em>{{ pub.title }}</em>. {{ pub.authors | join: ', ' }}. {{ pub.info }}.</a></li>
+<li data-timestamp="{{ pub.date | date: "%s" }}"><a href="{{ pub.url }}"><em>{{ pub.title }}</em>. {{ pub.authors | join: ', ' }}. {{ pub.info }}.</a></li>

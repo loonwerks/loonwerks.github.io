@@ -2,10 +2,31 @@
 layout: default
 ---
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
 <div id="home">
+
+<h1>About us</h1>
 <p>
 Loonwerks is a finite set of formal methods researchers based in the <A href="https://www.google.com/maps/place/7805+Telegraph+Rd,+Minneapolis,+MN+55438/@44.8608324,-93.3833626,15z/">Minneapolis office</A> of Rockwell Collins.  Our work is focused on the use of formal methods to create safe and secure avionics software.  We build tools that make the latest advances in automated analysis from the research community accessible to system and software developers in industry.  
 </p>
+
+<div id="news">
+<h1>What's new</h1>
+{% include sorted-elements.html %}
+  {% assign year_ago_timestamp = site.time | date: "%s" | minus: 31536000 %}
+  <div class="publications" style="visibility: hidden">
+    <ul>
+      {% for pub in sorted_publications %}
+        {% assign pub_timestamp = pub.date | date: "%s" | minus: 0 %}
+        {% if pub_timestamp > year_ago_timestamp %}
+          {% include pub-ref.html %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+</div>
 
 <img src="/images/minneapolis-bw.png" />
 
@@ -13,6 +34,23 @@ Loonwerks is a finite set of formal methods researchers based in the <A href="ht
 Loonwerks is solely responsible for the content of this web site. Such
 content does not necessarily represent the views of Rockwell Collins.
 </p>
+
+<script type="text/javascript">
+  var now_timestamp = Date.now() / 1000;
+  var minute = 60;
+  var hour = 60*minute;
+  var day = 24*hour;
+  var year = 365*day;
+  var cutoff_timestamp = now_timestamp - (year / 2);
+
+  $('#news li').each(function (index) {
+    var news_timestamp = parseInt($(this).attr('data-timestamp'), 10);
+    if (news_timestamp < cutoff_timestamp) {
+      $(this).hide();
+    }
+  });
+  $('#news .publications').css('visibility', 'visible');
+</script>
 
 </div>
 
