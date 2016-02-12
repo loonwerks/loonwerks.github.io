@@ -11,11 +11,11 @@ layout: default
 Loonwerks is a finite set of formal methods researchers based in the <A href="https://www.google.com/maps/place/7805+Telegraph+Rd,+Minneapolis,+MN+55438/@44.8608324,-93.3833626,15z/">Minneapolis office</A> of Rockwell Collins.  Our work is focused on the use of formal methods to create safe and secure avionics software.  We build tools that make the latest advances in automated analysis from the research community accessible to system and software developers in industry.  
 </p>
 
-<div id="news">
+<div id="news" style="visibility: hidden">
 <h1>What's new</h1>
 {% include sorted-elements.html %}
   {% assign year_ago_timestamp = site.time | date: "%s" | minus: 31536000 %}
-  <div class="publications" style="visibility: hidden">
+  <div class="publications">
     <ul>
       {% for pub in sorted_publications %}
         {% assign pub_timestamp = pub.date | date: "%s" | minus: 0 %}
@@ -43,13 +43,19 @@ content does not necessarily represent the views of Rockwell Collins.
   var year = 365*day;
   var cutoff_timestamp = now_timestamp - (year / 2);
 
+  var have_news = false;
   $('#news li').each(function (index) {
     var news_timestamp = parseInt($(this).attr('data-timestamp'), 10);
     if (news_timestamp < cutoff_timestamp) {
       $(this).hide();
+    } else {
+      have_news = true;
     }
   });
-  $('#news .publications').css('visibility', 'visible');
+
+  if (have_news) {
+    $('#news').css('visibility', 'visible');
+  }
 </script>
 
 </div>
