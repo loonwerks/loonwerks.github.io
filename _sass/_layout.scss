@@ -56,10 +56,14 @@
         padding-top: 20px;
         background: $grey-color-light;
 
-        min-height: 500px;
+        min-height: 600px;
         
         ul {
             list-style-type: none;
+            
+            li.iowa-chapter {
+                font-style: italic;
+            }
         }
     }
 
@@ -159,7 +163,7 @@
 /**
  * People index
  */
-#people {
+.people {
     .separator {
         margin-top: -15px;
         margin-bottom: 15px;

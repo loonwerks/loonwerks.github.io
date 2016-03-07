@@ -1,0 +1,15 @@
+---
+layout: default
+title: "Loonwerks: Iowa Chapter"
+---
+
+{% include sorted-elements.html %}
+
+<div class="people">
+  {% for person in sorted_iowa %}
+    {% include person-summary.html %}
+    {% unless forloop.last %}
+    <div class="separator"></div>
+    {% endunless %}
+  {% endfor %}
+</div>

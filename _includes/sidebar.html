@@ -2,9 +2,16 @@
 
 <div id="sidebar">
   <ul>
-    <li><a href="/people/">People</a>
+    <li><a href="/people/founders.html">Founders</a>
       <ul>
-        {% for person in sorted_loonwerks %}
+        {% for person in sorted_minnesota %}
+        <li><a href="{{ person.url }}">{{ person.fullname }}</a></li>
+        {% endfor %}
+      </ul>
+    </li>
+    <li><a href="/people/iowa.html">Iowa Chapter</a>
+      <ul>
+        {% for person in sorted_iowa %}
         <li><a href="{{ person.url }}">{{ person.fullname }}</a></li>
         {% endfor %}
       </ul>
@@ -26,11 +33,6 @@
     <li>
       <a href="/publications/">Publications</a>
     </li>
-    <!--   
-    <li>
-      <a href="/people/cornwerks.html">Cornwerks</a>
-    </li>
-    -->
     <li>
       <a href="https://www.facebook.com/loonwerks/">Facebook</a>
     </li>
