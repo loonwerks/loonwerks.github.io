@@ -1,0 +1,30 @@
+---
+layout: publication
+authors: [A. Katis, M. Whalen, A. Gacek]
+title: "Towards synthesis from assume-guarantee contracts involving infinite theories: a preliminary report"
+info: "FormaliSE 2016: FME Workshop on Formal Methods in Software Engineering, Austin, TX, USA, May 15, 2016"
+link: "http://arxiv.org/pdf/1602.00148.pdf"
+date: 2016-05-15 00:00:00
+---
+
+<p>
+In previous work, we have introduced a contract-based realizability
+checking algorithm for assume-guarantee contracts involving infinite
+theories, such as linear integer/real arithmetic and uninterpreted
+functions over infinite domains. This algorithm can determine whether
+or not it is possible to construct a realization (i.e. an
+implementation) of an assume-guarantee contract. The algorithm is
+similar to k-induction model checking, but involves the use of
+quantifiers to determine implementability. While our work on
+realizability is inherently useful for virtual integration in
+determining whether it is possible for suppliers to build software
+that meets a contract, it also provides the foundations to solving the
+more challenging problem of component synthesis. In this paper, we
+provide an initial synthesis algorithm for assume-guarantee contracts
+involving infinite theories. To do so, we take advantage of our
+realizability checking procedure and a skolemization solver for
+forall-exists formulas, called AE-VAL. We show that it is possible to
+immediately adapt our existing algorithm towards synthesis by using
+this solver, using a demonstration example. We then discuss challenges
+towards creating a more robust synthesis algorithm.
+</p>
