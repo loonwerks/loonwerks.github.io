@@ -1,0 +1,48 @@
+---
+layout: publication
+authors: [T. Pham, A. Gacek, M. Whalen]
+title: "Reasoning about Algebraic Data Types with Abstractions"
+info: "Journal of Automated Reasoning (to appear)"
+link: "http://arxiv.org/pdf/1603.08769.pdf"
+date: 2016-04-01 00:00:00
+---
+
+<p>
+Reasoning about functions that operate over algebraic data types is an
+important problem for a large variety of applications. One application
+of particular interest is network applications that manipulate or
+reason about complex message structures, such as XML messages. This
+paper presents a decision procedure for reasoning about algebraic data
+types using abstractions that are provided by catamorphisms: fold
+functions that map instances of algebraic data types to values in a
+decidable domain. We show that the procedure is sound and complete for
+a class of catamorphisms that satisfy a generalized sufficient
+surjectivity condition. Our work extends a previous decision procedure
+that unrolls catamorphism functions until a solution is found.
+</p>
+
+<p>
+We use the generalized sufficient surjectivity condition to address an
+incompleteness in the previous unrolling algorithm (and associated
+proof). We then propose the categories of monotonic and associative
+catamorphisms, which we argue provide a more intuitive inclusion test
+than the generalized sufficient surjectivity condition. We use these
+notions to address two open problems from previous work: (1) we
+provide a bound, with respect to formula size, on the number of
+unrollings necessary for completeness, showing that it is linear for
+monotonic catamorphisms and exponentially small for associative
+catamorphisms, and (2) we demonstrate that associative catamorphisms
+can be combined within a formula while preserving completeness. Our
+combination results extend the set of problems that can be reasoned
+about using the catamorphism-based approach.
+</p>
+
+<p>
+We also describe an implementation of the approach, called RADA, which
+accepts formulas in an extended version of the SMT-LIB 2.0 syntax. The
+procedure is quite general and is central to the reasoning
+infrastructure for Guardol, a domain-specific language for reasoning
+about network guards.
+</p>
+
+
