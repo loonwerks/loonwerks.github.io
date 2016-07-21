@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2CTWJJwCD7k9B8PTVwVFDvGuTjom55u0&callback=initMap&libraries=drawing" async defer></script>
+<html>
+  <head>
+    <title>Geofence Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+
+var selectedShape;
+
+function clearSelection() {
+  if (selectedShape) {
+    selectedShape.setEditable(false);
+    selectedShape = null;
+  }
+}
+
+function setSelection(shape) {
+  clearSelection();
+  selectedShape = shape;
+  shape.setEditable(true);
+}
+
+function deleteSelectedShape() {
+  if (selectedShape) {
+    selectedShape.setMap(null);
+  }
+}
+
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 44.859244, lng: -93.3832576},
+    zoom: 8
+  });
+
+  var drawingManager = new google.maps.drawing.DrawingManager({
+    drawingMode: google.maps.drawing.OverlayType.MARKER,
+    drawingControl: true,
+    drawingControlOptions: {
+      position: google.maps.ControlPosition.TOP_CENTER,
+      drawingModes: [
+        google.maps.drawing.OverlayType.RECTANGLE
+      ]
+    },
+    markerOptions: {icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'}
+  });
+  drawingManager.setMap(map);
+  
+
+google.maps.event.addListener(drawingManager, 'rectanglecomplete', function(rectangle) {
+    bounds = rectangle.getBounds();
+    var leftLon = bounds.b.b;
+    var rightLon = bounds.b.f;
+    var topLat = bounds.f.b;
+    var botLat = bounds.f.f;
+    
+    alert ("leftLon: "+leftLon+"\n" +
+           "rightLon: "+rightLon+"\n" +
+           "topLat: "+topLat+"\n" +
+           "botLat: "+botLat+"\n");
+    
+  });
+  
+    google.maps.event.addListener(drawingManager, 'overlaycomplete', function(e) {
+    if (e.type != google.maps.drawing.OverlayType.MARKER) {
+      // Switch back to non-drawing mode after drawing a shape.
+      drawingManager.setDrawingMode(null);
+      // Add an event listener that selects the newly-drawn shape when the user mouses down on it.
+      var newShape = e.overlay;
+      newShape.type = e.type;
+      google.maps.event.addListener(newShape, 'click', function() {
+        setSelection(newShape);
+      });
+      setSelection(newShape);
+    }
+  });
+  
+  // Clear the current selection when the drawing mode is changed, or when the map is clicked.
+  google.maps.event.addListener(drawingManager, 'drawingmode_changed', clearSelection);
+  google.maps.event.addListener(map, 'click', clearSelection);
+
+  document.onkeydown = function(e) {
+    e = e || window.event;
+    //the delete key appears to be keyCode 46
+    if(e.keyCode == 46){
+      deleteSelectedShape();
+    }
+  }
+
+}
+
+    </script>
+  </body>
+</html>
