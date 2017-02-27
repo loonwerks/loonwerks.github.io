@@ -1,11 +1,15 @@
 ---
 layout: tool
-toolname: AGREE
-summary: Assume Guarantee Reasoning Environment
-sourcecode: "https://github.com/smaccm/smaccm"
-download: "https://github.com/smaccm/smaccm/releases"
+toolname: SpeAR
+summary: Specification and Analysis of Requirements
+sourcecode: "https://github.com/lgwagner/spear"
+download: "https://github.com/lgwagner/SpeAR/releases"
 ---
 
 <p>
-The Assume Guarantee REasoning Environment (AGREE) is a compositional, assume-guarantee-style model checker for AADL models.  It is compositional in that it attempts to prove properties about one layer of the architecture using properties allocated to subcomponents.  The composition is performed in terms of assumptions and guarantees that are provided for each component.  Assumptions describe the expectations the component has on the environment, while guarantees describe bounds on the behavior of the component.  AGREE uses k-induction as the underlying algorithm for model checking.  
+The Specification and Analysis of Requirements (SpeAR) tool is a tool for prototyping and analyzing requirements. It uses a specification language on the front-end to ease the system's engineers transition from writing natural language specification to formalizable specifications. The process is not automated; engineers will have to take natural language text and determine how to formalize them.
+</p>
+
+<p>
+Once formalized, SpeAR will translate the specification to an equivalent Lustre model and analyze that the derived requirements permit (or prohibit) certain desired (or undesired) behaviors. It also supports the ability to check a specification for logical consistency and realizability, which help identify logical conflicts and unrealizable conditions.
 </p>
