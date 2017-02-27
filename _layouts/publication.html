@@ -4,8 +4,12 @@ layout: default
 
 <div class="publication">
     <h1 id="title">
+      {% if page.link %}
       <a href="{{ page.link }}">{{ page.title }}</a>
       <a href="{{ page.link }}"><img src="/images/pdf.png" /></a>
+      {% else %}
+      {{ page.title }}
+      {% endif %}
     </h1>
     <h2 id="authors">{% for author in page.authors %}
       {% if site.data.authors contains author %}{{ site.data.authors[author] }}{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}
