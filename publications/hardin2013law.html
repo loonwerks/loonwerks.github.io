@@ -1,0 +1,31 @@
+---
+layout: publication
+authors: [D. Hardin, J. McClurg, J. Davis]
+title: "Creating Formally Verified Components for Layered Assurance with an LLVM to ACL2 Translator"
+info: 7th Layered Assurance Workshop, December 2013
+link: "https://www.acsac.org/2013/workshops/law/2013-law-proceedings.pdf"
+projects: []
+tools: []
+date: 2017-12-10 00:00:00
+---
+
+In our current work, we need to create a library of formally
+verified software component models from code that has been
+compiled (or decompiled) using the Low-Level Virtual Machine
+(LLVM) intermediate form; these components, in turn,
+are to be assembled into subsystems whose top-level assurance
+relies on the assurance of the individual components.
+Thus, we have undertaken a project to build a translator
+from LLVM to the applicative subset of Common Lisp accepted
+by the ACL2 theorem prover. Our translator produces
+executable ACL2 specifications featuring tail recursion,
+as well as in-place updates via ACL2’s single-threaded
+object (stobj) mechanism. This allows us to efficiently support
+validation of our models by executing production tests
+for the original artifacts against those models. Unfortunately,
+features that make a formal model executable are often
+at odds with efficient reasoning. Thus, we also present a
+technique for reasoning about tail-recursive ACL2 functions
+that execute in-place, utilizing a formally proven “bridge” to
+primitive-recursive versions of those functions operating on
+lists.
