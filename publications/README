@@ -46,7 +46,7 @@ well.
 
 The "projects" field is an array of relevant projects on which the
 publication should appear. This is keyed based on the shortname of the
-project, such as SMACCM or Guardol. This is the name of the project as
+project, such as HACMS or Guardol. This is the name of the project as
 it appears in the sidebar of the website.
 
 Please that your publications look correct on the website and show up
