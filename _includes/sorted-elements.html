@@ -1,6 +1,7 @@
 {% assign sorted_people = site.pages | where: 'layout', 'person' | sort: 'sort' %}
 {% assign sorted_minnesota = site.pages | where: 'layout', 'person' | where: 'location', 'minnesota' | sort: 'sort' %}
 {% assign sorted_iowa = site.pages | where: 'layout', 'person' | where: 'location', 'iowa' | sort: 'sort' %}
-{% assign sorted_projects = site.pages | where: 'layout', 'project' | sort: 'sort' | reverse %}
+{% assign sorted_current_projects = site.pages | where: 'layout', 'project' | where: 'archive', false | sort: 'sort' | reverse %}
+{% assign sorted_previous_projects = site.pages | where: 'layout', 'project' | where: 'archive', true | sort: 'sort' | reverse %}
 {% assign sorted_tools = site.pages | where: 'layout', 'tool' | sort: 'title' %}
 {% assign sorted_publications = site.pages | where: 'layout', 'publication' | sort: 'date' | reverse %}

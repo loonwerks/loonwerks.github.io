@@ -1,0 +1,18 @@
+---
+layout: default
+title: Previous Projects
+---
+
+{% include sorted-elements.html %}
+
+<div class="projects">
+  <h1>Past Projects</h1>
+  <ul>
+  {% for project in sorted_previous_projects %}
+    <li>
+    <a href="{{ project.url }}">{{ project.shortname }}</a>: {{ project.longname }}
+    </li>
+  {% endfor %}
+  </ul>
+</div>
+

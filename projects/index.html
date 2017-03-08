@@ -6,9 +6,18 @@ title: Projects
 {% include sorted-elements.html %}
 
 <div class="projects">
-  <h1>Projects</h1>
+  <h1>Recent Projects</h1>
   <ul>
-  {% for project in sorted_projects %}
+  {% for project in sorted_current_projects %}
+    <li>
+    <a href="{{ project.url }}">{{ project.shortname }}</a>: {{ project.longname }}
+    </li>
+  {% endfor %}
+  </ul>
+
+  <h1>Past Projects</h1>
+  <ul>
+  {% for project in sorted_previous_projects %}
     <li>
     <a href="{{ project.url }}">{{ project.shortname }}</a>: {{ project.longname }}
     </li>

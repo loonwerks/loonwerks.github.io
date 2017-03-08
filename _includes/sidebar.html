@@ -18,9 +18,10 @@
     </li>
     <li><a href="/projects/">Projects</a>
       <ul>
-        {% for project in sorted_projects %}
+        {% for project in sorted_current_projects %}
         <li><a href="{{ project.url }}">{{ project.shortname }}</a></li>
         {% endfor %}
+        <li><i><a href="/projects/past.html">Past Projects</a></i></li>
       </ul>
     </li>
     <li><a href="/tools/">Tools</a>
