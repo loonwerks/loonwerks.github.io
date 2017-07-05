@@ -1,0 +1,27 @@
+---
+layout: publication
+authors: [L. Wagner, D. Greve, A. Gacek]
+title: "SIMPAL: A Compositional Reasoning Framework for Imperative Programs"
+info: International SPIN Symposium on Model Checking of Software, July 2017
+link: "pdf/wagner2017spin.pdf"
+date: 2017-07-13 00:00:00
+---
+
+<p>
+The Static IMPerative AnaLyzer (SIMPAL) is a tool for performing
+compositional reasoning over software programs that utilize
+preexisting software components. SIMPAL features a specification
+language, called Limp, for modeling programs that utilize preexisting
+components. Limp is a Lustre-like imperative language. It provides
+control flow elements, global variables, and a syntax for specifying
+preconditions, postconditions, and global variable interactions of
+preexisting components.
+</p>
+
+<p>
+SIMPAL translates Limp programs to an equivalent Lustre
+representationwhich can be passed to the JKind model checking tool to
+perform assume-guarantee reasoning, reachability, and viability
+analyses. The feedback from these analyses can be used to refine the
+program to ensure the software functions as intended.
+</p>
