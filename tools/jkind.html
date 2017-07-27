@@ -7,8 +7,9 @@ download: "https://github.com/agacek/jkind/releases"
 ---
 
 <p>
-JKind is a tool for verifying safety properties of synchronous
-systems. Systems and their properties are expressed in
+JKind is an infinite state model checker for verifying safety
+properties of synchronous systems. Systems and their properties are
+expressed in
 the <a href="https://en.wikipedia.org/wiki/Lustre_(programming_language)">Lustre</a>
 language. Verification is based on k-induction and property directed
 reachability using a back-end SMT solver. A verified property is
@@ -19,15 +20,22 @@ violation.
 
 <p>
 JKind is used as the back-end model checker for many projects and
-tools at Rockwell Collins including
-the <a href="/tools/agree.html">AGREE</a> tool and
-the <a href="https://github.com/lgwagner/SIMPAL">SIMPAL</a> tool.
-JKind is designed to be cross-platform, reliable, and easy to extend,
-with power and performance as secondary goals. JKind is mostly
+tools at Rockwell Collins
+including <a href="/tools/agree.html">AGREE</a>, <a href="/tools/spear.html">SpeAR</a>,
+and
+<a href="https://github.com/lgwagner/SIMPAL">SIMPAL</a>. JKind is also
+used for internal projects releated to test case generation and
+certification.
+</p>
+
+<!--
+<p>
+JKind is cross-platform, reliable, and easy to extend. JKind is largely
 compatible with the <a href="http://clc.cs.uiowa.edu/Kind/">KIND</a>
 and <a href="http://kind2-mc.github.io/kind2/">Kind 2</a> model
 checkers.
 </p>
+-->
 
 <p>
 JKind requires at least Java 8. JKind
