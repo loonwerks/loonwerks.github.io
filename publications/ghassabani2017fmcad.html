@@ -1,0 +1,41 @@
+---
+layout: publication
+authors: [E. Ghassabani, M. Whalen, A. Gacek]
+title: "Efficient Generation of All Minimal Inductive Validity Cores"
+info: Formal Methods in Computer-Aided Design, October 2017
+link: "pdf/ghassabani2017fmcad.pdf"
+projects: [HACMS]
+tools: [JKind]
+date: 2017-10-2 00:00:00
+---
+
+<p>
+Symbolic model checkers can construct proofs of safety properties over
+complex models, but when a proof succeeds, the results do not
+generally provide much insight to the user. Recently, proof cores
+(alternately, for inductive model checkers, Inductive Validity Cores
+(IVCs)) were introduced to trace a property to a minimal set of model
+elements necessary for proof. Minimal IVCs facilitate several
+engineering tasks, including performing traceability and analyzing
+requirements completeness, that usually rely on the minimality of
+IVCs. However, existing algorithms for generating an IVC are either
+expensive or only able to find an approximately minimal IVC.
+</p>
+
+<p>
+Besides minimality, computing all minimal IVCs of a given property is
+an interesting problem that provides several useful analyses,
+including regression analysis for testing/proof, determination of the
+minimum (as opposed to minimal) number of model elements necessary for
+proof, the diversity examination of model elements leading to proof,
+and analyzing fault tolerance.
+</p>
+
+<p>
+This paper proposes an efficient method for finding all minimal IVCs
+of a given property proving its correctness and completeness.We
+benchmark our algorithm against existing IVC-generating algorithms and
+show, in many cases, the cost of finding all minimal IVCs by our
+technique is similar to finding a single minimal IVC using existing
+algorithms.
+</p>
