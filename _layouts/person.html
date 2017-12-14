@@ -5,6 +5,20 @@ layout: default
 {% include sorted-elements.html %}
 
 <div id="person">
+  {% if page.location == 'alumni' %}
+  <blockquote>
+    <i>Most birds lay their eggs in nests, and the nestlings remain in
+      the nest for days or weeks. Not loons! It would be incorrect to call
+      loon chicks "nestlings" for more than a few hours. Once they leave
+      the nest, they're out of there for good!</i>
+    <br/>
+    <br/>
+    <p style="text-align: right"><a href="https://www.learner.org/jnorth/tm/loon/BabyOnBoard.html">Journey North</a></p>
+  </blockquote>
+  <br/>
+  <br/>
+  {% endif %}
+
   <header>
     <div id="summary">
       {% if page.picture %}<div id="picture"><img src="{{ page.picture }}"/></div>{% endif %}

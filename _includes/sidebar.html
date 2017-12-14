@@ -16,6 +16,13 @@
         {% endfor %}
       </ul>
     </li>
+    <li><a href="/people/alumni.html">Alumni</a>
+      <ul>
+        {% for person in sorted_alumni %}
+        <li><a href="{{ person.url }}">{{ person.fullname }}</a></li>
+        {% endfor %}
+      </ul>
+    </li>
     <li><a href="/projects/">Projects</a>
       <ul>
         {% for project in sorted_current_projects %}
