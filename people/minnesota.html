@@ -1,0 +1,15 @@
+---
+layout: default
+title: "Loonwerks: Headquarters"
+---
+
+{% include sorted-elements.html %}
+
+<div class="people">
+  {% for person in sorted_minnesota %}
+    {% include person-summary.html %}
+    {% unless forloop.last %}
+    <div class="separator"></div>
+    {% endunless %}
+  {% endfor %}
+</div>
