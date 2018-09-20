@@ -1,0 +1,10 @@
+---
+layout: publication
+authors: [J. Davis, D. Kingston, L. Humphrey]
+title: "When human intuition fails: using formal methods to find an error in the 'proof' of a multi-agent protocol"
+info: 
+link: "pdf/davis2018.pdf"
+date: 2018-09-20 00:00:00
+---
+
+Designing protocols for multi-agent interaction that achieve the desired behavior is a challenging and error-prone process. Proofs of protocol correctness rely on human intuition and require significant effort to develop. Even then, proofs can have mistakes that may go unnoticed after peer review, modeling and simulation, and testing of the resulting system. The potential for errors can be reduced through the use of formal methods, i.e. automated or semi-automated mathematically rigorous tools and techniques for system specification, design, and verification. In this paper, we apply a type of formal method called model checking to a previously published decentralized protocol for coordinating a surveillance task across multiple unmanned aerial vehicles. The original publication provides a compelling proof of correctness, along with extensive simulation results to support it. However, our analysis found an error in one of the lemmas used in the proof. In this paper, we provide an overview of the protocol, the original "proof" of correctness, the model checking approach we used to analyze the protocol, the counterexample returned by the model checker, and the insight this counterexample provides into why the original lemma was incorrect. We also discuss how the formal modeling process revealed that certain aspects of the protocol were underspecified, and what future efforts would be needed to fully verify it with formal methods.
