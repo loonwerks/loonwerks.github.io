@@ -1,0 +1,32 @@
+---
+layout: publication
+authors: [D. Greve]
+title: "Model-Based Grey-Box Fuzzing"
+info: 19th High Confidence Software and Systems Conference (HCSS), April 2019
+link: "slides/greve2019hcss.pdf"
+tools: [FuzzM]
+date: 2019-04-31 00:00:00
+---
+<p>
+Constraint solving technology can be used to generate tests from
+model-based system requirements.  Such tests can be generated
+automatically and are capable of meeting even stringent MC/DC code
+coverage criteria required for DO-178C Level A certification.  Given
+that high-quality safety-relevant behavioral tests can be generated
+from requirements-level models, perhaps a similar approach works for
+security-relevant testing as well.  Fuzz testing is an example of
+security-relevant testing that employs random, invalid or unusual
+inputs to search for unknown and potentially exploitable system
+behaviors.  In this talk we will discuss model-based grey-box fuzzing,
+a fuzzing technique that employs mathematical models of system-level
+requirements to guide the fuzzing process and constraint solving
+technology to deduce high-quality tests capable of targeting deep
+system behaviors that random fuzzing alone would be unlikely to reach.
+The talk will provide an overview of model-based fuzzing, demonstrate
+how it can be used to model a simple system, and compare its
+performance with several more traditional off-the-self fuzzing
+solutions.  We will also identify some on-going research challenges
+associated with model-based fuzzing, including expressing and
+targeting security relevant requirements and measuring the
+effectiveness of the generated tests.
+</p>
