@@ -1,0 +1,36 @@
+---
+layout: publication
+authors: [E. Mercer, K. Slind, I. Amundson, D. Cofer, J. Babar, D. Hardin]
+title: "Synthesizing Verified Components for Cyber Assured Systems Engineering"
+info: MODELS, 2021
+link: "/publications/pdf/mercer2021MODELS.pdf"
+date: 2021-09-15 00:00:00
+projects: [CASE]
+---
+
+<p>Cyber-physical systems, such as avionics, must be
+tolerant to cyber-attacks in the same way they are tolerant to
+random faults: they either gracefully recover or safely shut down
+as requirements dictate. The DARPA Cyber Assured Systems
+Engineering program is developing tools for design, analysis,
+and verification that enable systems engineers to design-in cyberresiliency
+in a Model-Based Systems Engineering environment.
+This paper describes automated model transformations that
+introduce high-assurance cyber-resiliency components into a
+system, in particular filters and monitors that prevent malicious
+input and detect supply chain attacks, respectively. A
+formal specification defines each high-assurance component, and
+is used to verify that the component addresses system level
+cyber requirements. Implementations for these high-assurance
+components are directly synthesized from their specifications,
+and are automatically proven to preserve the exact meaning of
+the specifications all the way down to the binary code level.
+The model transformations are integrated into the Open Source
+AADL Tool Environment (OSATE). The paper further reports on
+a case study applying security-enhancing model transformations
+to a UAV system that uses the Air Force Research Laboratory’s
+OpenUxAS services for route planning. In the case study, the
+model transformations add filters to guard against malformed
+input, as well as monitors to guard against ground station
+spoofing and malicious flight plans from OpenUxAS.
+</p>

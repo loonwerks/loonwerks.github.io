@@ -1,0 +1,48 @@
+---
+layout: publication
+authors: [D. Hardin]
+title: "Verified Hardware/Software Co-Assurance: Enhancing Safety and Security for Critical Systems"
+info: Proceedings of the 2020 IEEE Systems Conference, September 2020
+link: "/publications/pdf/hardin2020syscon.pdf"
+date: 2020-09-15 00:00:00
+projects: [CASE]
+---
+
+<p>Experienced developers of safety-critical and
+security-critical systems have long emphasized the importance
+of applying the highest degree of scrutiny to a system’s I/O
+boundaries. From a safety perspective, input validation is a
+traditional “best practice.” For security-critical architecture and
+design, identification of the attack surface has emerged as a
+primary analysis technique. One of our current research focus
+areas concerns the identification of and mitigation against attacks
+along that surface, using mathematically-based tools. We are
+motivated in these efforts by emerging application areas, such
+as assured autonomy, that feature a high degree of network connectivity,
+require sophisticated algorithms and data structures,
+are subject to stringent accreditation/certification, and encourage
+hardware/software co-design approaches. We have conducted
+several experiments employing a state-of-the-art toolchain, due
+to Russinoff and O’Leary, and originally designed for use in
+floating-point hardware verification, to determine its suitability
+for the creation of safety-critical/security-critical input filters.
+We focus first on software implementation, but extending to
+hardware as well as hardware/software co-designs. We have
+implemented a high-assurance filter for JSON-formatted data
+used in an Unmanned Aerial Vehicle (UAV) application. Our
+JSON filter is built using a table-driven lexer/parser, supported
+by mathematically-proven lexer and parser table generation
+technology, as well as verified data structures. Filter behavior is
+expressed in a subset of Algorithmic C, which defines a set of C++
+header files providing support for hardware design, including
+the peculiar bit widths utilized in that discipline, and enables
+compilation to both hardware and software platforms. The
+Russinoff-O’Leary Restricted Algorithmic C (RAC) toolchain
+translates Algorithmic C source to the Common Lisp subset
+supported by the ACL2 theorem prover; once in ACL2, filter
+behavior can be mathematically verified. We describe how we
+utilize RAC to translate our JSON filter to ACL2, present
+proofs of correctness for its associated data types, and describe
+validation and performance results obtained through the use of
+concrete test vectors.
+</p>

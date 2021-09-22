@@ -1,0 +1,50 @@
+---
+layout: publication
+authors: [D. Hardin, K. Slind]
+title: "Formal Synthesis of Filter Components for Use in Security-Enhancing Architectural Transformations"
+info: Proceedings of the Seventh Workshop on Language-Theoretic Security at the 2021 IEEE Computer Society Security and Privacy Symposium LangSec 2021, May 2021
+link: "/publications/pdf/hardin2021langsec.pdf"
+date: 2021-05-15 00:00:00
+projects: [CASE]
+---
+
+<p>Safety- and security-critical developers have long
+recognized the importance of applying a high degree of scrutiny
+to a system’s (or subsystem’s) I/O messages. However, lack of
+care in the development of message-handling components can
+lead to an increase, rather than a decrease, in the attack surface.
+On the DARPA Cyber-Assured Systems Engineering (CASE)
+program, we have focused our research effort on identifying
+cyber vulnerabilities early in system development, in particular
+at the Architecture development phase, and then automatically
+synthesizing components that mitigate against the identified
+vulnerabilities from high-level specifications. This approach is
+highly compatible with the goals of the LangSec community.
+Advances in formal methods have allowed us to produce
+hardware/software implementations that are both performant
+and guaranteed correct. With these tools, we can synthesize
+high-assurance “building blocks” that can be composed automatically
+with high confidence to create trustworthy systems,
+using a method we call Security-Enhancing Architectural Transformations.
+Our synthesis-focused approach provides a higherleverage
+insertion point for formal methods than is possible
+with post facto analytic methods, as the formal methods tools
+directly contribute to the implementation of the system, without
+requiring developers to become formal methods experts.
+Our techniques encompass Systems, Hardware, and Software
+Development, as well as Hardware/Software Co-Design/Co-
+Assurance. We illustrate our method and tools with an example
+that implements security-improving transformations on system
+architectures expressed using the Architecture Analysis and
+Design Language (AADL). We show how message-handling
+components can be synthesized from high-level regular or
+context-free language specifications, as well as a novel specification
+language for self-describing messages called Contiguity
+Types, and verified to meet arithmetic constraints extracted
+from the AADL model. Finally, we guarantee that the intent
+of the message processing logic is accurately reflected in the
+application binary code through the use of the verified CakeML
+compiler, in the case of software, or the Restricted Algorithmic
+C toolchain with ACL2-based formal verification, in the case
+of hardware/software co-design.
+</p>

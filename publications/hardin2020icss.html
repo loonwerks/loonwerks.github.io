@@ -1,0 +1,37 @@
+---
+layout: publication
+authors: [D. Hardin, K. Slind, J. Aman Pohjola, M. Sproul]
+title: "Synthesis of Verified Architectural Components for Critical Systems Hosted on a Verified Microkernel"
+info: Proceedings of the 53rd Hawaii International Conference on System Sciences, January 2020
+link: "/publications/pdf/hardin2020icss.pdf"
+date: 2020-01-15 00:00:00
+projects: [CASE]
+---
+
+<p>We describe a method and tools for the creation of
+formally verified components that run on the verified
+seL4 microkernel. This synthesis and verification
+environment provides a basis to create safe and
+secure critical systems. The mathematically proved
+space and time separation properties of seL4 are
+particularly well-suited for the miniaturised electronics
+of smaller, lower-cost Unmanned Aerial Vehicles (UAVs),
+as multiple, independent UAV applications can be
+hosted on a single CPU with high assurance. We
+illustrate our method and tools with an example
+that implements security-improving transformations
+on system architectures captured in the Architecture
+Analysis and Design Language (AADL). We show how
+input validation filter components can be synthesised
+from regular expressions, and verified to meet arithmetic
+constraints extracted from the AADL model. Such
+filters comprise efficient guards on messages to/from
+the autonomous system. The correctness proofs
+for filters are automatically lifted to proofs of the
+corresponding properties on the lazy streams that model
+the communications of the generated seL4 threads.
+Finally, we guarantee that the intent of the autonomy
+application logic is accurately reflected in the application
+binary code hosted on seL4 through the use of the verified
+CakeML compiler.
+</p>
