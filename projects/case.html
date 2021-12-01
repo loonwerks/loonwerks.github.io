@@ -13,24 +13,51 @@ designing complex embedded computing systems. Cyber-resiliency means that the sy
 is tolerant to cyberattacks in the same way that safety-critical systems are tolerant to
 random faults - they recover and continue to execute their mission function.</p>
 
-<p>Collins Aerospace, Data61, and The University of Kansas have teamed to provide a
-comprehensive solution to the Design Resiliency objectives for Technical Area 2 of the CASE program.
-We are pursuing four technology development thrusts:
-<ul>
-<li>Verification of Cyber Requirements via formal architecture, design, and
-implementation modeling/analysis, and automated information flow analysis</li>
-<li>Cyber-Resilient Design Patterns via tool-assisted model transformations utilizing
-verified cyber-resilient components</li>
-<li>Runtime Assurance for Requirements via verified cyber-resilient components and
-remote attestation</li>
-<li>Architectural Design Model Validation via model-based test generation</li>
-</ul></p>
+<p>Collins Aerospace, Adventium, the University of New South Wales (Sydney), the University of Kansas, 
+and Kansas State University have teamed to provide a
+comprehensive solution to the design resiliency and tool integration objectives 
+of the CASE program.
+We have developed a model-based
+systems engineering environment called BriefCASE that
+allows engineers to address a range of properties
+and manage system complexity through compositional
+analysis, integrating formal methods at
+all levels of the design process.
+Our tools are based on the Architecture Analysis
+and Design Language (AADL) and extend
+the Open Source AADL Tool Environment (OSATE).<\p>
+	
+<p>The main innovations of the BriefCASE tools
+and methodology are:
+<ol>
+<li>We provide automated architectural design
+patterns to address cyber-resiliency
+requirements, including synthesis of highassurance
+components from formal specifications.</li>
+<li>Our MBSE environment can target different
+operating systems including the seL4 microkernel,
+making its formal security guarantees
+easily accessible to developers. This
+ensures that the implementation produced
+is faithful to the modeled system.</li>
+<li>Our approach is based upon co-evolution
+of system design and assurance artifacts,
+so that design changes automatically update
+the associated certification evidence. An
+assurance case is a structured argument,
+supported by evidence, intended to justify
+that a system is acceptably assured relative
+to a concern (such as safety or security)
+in the intended operating environment. An
+assurance case is embedded in the architecture
+model to capture and document the
+design decisions along with associated rationale.</li>
+<li>Formal methods are integrated throughout
+the workflow, including requirements
+capture, component synthesis, verification,
+code generation, and the seL4 microkernel.</li>
+</ol></p>
 
-<p>In CASE Technical Area 5, Collins Aerospace and our teammates, Data61, Adventium, and Kansas State University, will develop an integrated formal methods-based systems engineering tool
-suite and work with military platform providers applying these tools to construct cyber-resilient
-systems.  This effort will leverage our expertise in industrial application of formal methods,
-development of complex military vehicles, formally verified operating system components,
-and formal design languages and synthesis.</p>
 
 <p>Tools developed on the CASE project are available on <a href="https://github.com/loonwerks/formal-methods-workbench" target="_blank">github</a>. AADL models based on an experimental UAV application are available <a href="https://github.com/loonwerks/case-ta6-experimental-platform-models" target="_blank">here</a>. </p>
 
