@@ -1,4 +1,4 @@
-{% assign sorted_people = site.pages | where: 'layout', 'person' | sort: 'sort' %}
+{% assign sorted_people = site.pages | where: 'layout', 'person' | where_exp: 'item', 'item.location != alumni' | sort: 'sort' %}
 {% assign sorted_minnesota = site.pages | where: 'layout', 'person' | where: 'location', 'minnesota' | sort: 'sort' %}
 {% assign sorted_iowa = site.pages | where: 'layout', 'person' | where: 'location', 'iowa' | sort: 'sort' %}
 {% assign sorted_alumni = site.pages | where: 'layout', 'person' | where: 'location', 'alumni' | sort: 'sort' %}
