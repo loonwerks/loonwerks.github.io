@@ -1,0 +1,13 @@
+---
+layout: publication
+authors: [E. Mercer, K. Slind, I. Amundson, D. Cofer, J. Babar, D. Hardin]
+title: "Synthesizing Verified Components for Cyber Assured Systems Engineering"
+info: Software and Systems Modeling, March 2023
+link: "https://rdcu.be/c747k"
+date: 2023-03-22 00:00:00
+projects: [CASE]
+tools: [AGREE, Resolute]
+---
+
+<p>Safety-critical systems such as avionics need to be engineered to be cyber resilient meaning that systems are able to detect andrecover from attacks or safely shutdown. As there are few development tools for cyber resiliency, designers rely on guidelinesand checklists, sometimes missing vulnerabilities until late in the process where remediation is expensive. Our solution is amodel-based approach with cyber resilience-improving transforms that insert high-assurance components such as ﬁlters toblock malicious data or monitors to detect and alarm anomalous behavior. Novel is our use of model checking and a veriﬁedcompiler to specify, verify, and synthesize these components. We deﬁne code contracts as formal speciﬁcations that designerswrite for high-assurance components, and test contracts as tests to validate their behavior. A model checker proves whetheror not code contracts satisfy test contracts in an iterative development cycle. The same model checker also proves whether ornot a system with the inserted components, assuming they adhere to their code contracts, provides the desired cyber resiliencyfor the system. We deﬁne an algorithm to synthesize implementations for code contracts in a semantics-preserving way thatis backed by a veriﬁed compiler. The entire workﬂow is implemented as part of the open source BriefCASE toolkit. Wereport on our experience using BriefCASE with a case study on a UAV system that is transformed to be cyber resilient tocommunication and supply chain cyber attacks. Our case study demonstrates that writing code contracts and then synthesizingcorrect implementations from them are feasible in real-world systems engineering for cyber resilience.
+</p>
