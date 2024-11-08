@@ -1,0 +1,12 @@
+---
+layout: publication
+authors: [A. Tahat, D. Hardin, A. Petz, P. Alexander]
+title: "Proof Repair Utilizing Large Language Models: A Case Study on the Copland Remote Attestation Proofbase"
+info: AISoLA, October 2024
+link: "/publications/pdf/tahat2024aisola.pdf"
+date: 2024-10-01 00:00:00
+projects: [CASE]
+---
+
+ Large Language Model (LLM) Artificial Intelligence (AI) systems have generated significant enthusiasm in the computer science research community for their potential in various computer language processing tasks, such as source code generation and source-to-source translation. We are particularly interested in using LLMs for automated theorem proving, specifically for proof repair. To this end, we introduce CoqDog Copilot, which leverages the neuro-symbolic interplay between generative AI and the Coq theorem prover to form a productive "generate-and-test" loop, incrementally improving proofs based on failure information and human hints until valid proofs are achieved. Our research introduces innovative solutions to critical challenges in developing CoqDog Copilot, including addressing context limitations, enhancing the soundness of recommendation systems, defining effective metrics for measuring proof repair progress, and designing a statistically robust evaluation system for conversational quality assessment. We present a comprehensive evaluation of CoqDog Copilot’s performance in proof repair across multiple samples from the Copland Coq proofbase, which consists of a total of 21,000 lines of Coq code. We have attained in excess of 60% accuracy for proof generation using GPT-4 in one ’shot’, with approximately 30% more lemmas proved given one additional user prompt (yielding 90% correctness overall). With three ’shots’, the overall proof correctness rate increases to 97%. We could generate Coq proofs with up to 50 proof steps using this technique. Our LLM-generated proofbase currently consists of over 1,400 lines of Copland Coq source.
+
