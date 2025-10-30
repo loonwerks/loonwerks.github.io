@@ -2,9 +2,10 @@
 layout: publication
 authors: [S. Hallerstede, Robby, J. Hatcliff, J. Belt, D. Hardin]
 title: "Proof Engineering in Logika: Synergistically Integrating Automated and Semi-Automated Program Verification"
-info: 30th International Conference on Formal Methods for Industrial Critical Systems (FMICS)
-projects: [INSPECTA]
+info: 30th International Conference on Formal Methods for Industrial Critical Systems (FMICS 2025)
+link: "/publications/pdf/hallerstede2025fmics.pdf"
 date: 2025-08-25 00:00:00
+projects: [INSPECTA]
 ---
 
 Recent work on industry-capable program verification technology has emphasized the need for greater predictability in the performance of SMT-based automated verification approaches. Moreover, foundational limitations of SMT necessitate some incorporation of manual proof steps, and researchers are considering the utility of handing off some verification obligations to more powerful semi-automated interactive proof assistants. In this paper, we describe how capabilities that are usually associated with expert-level semi-automated proof assistants can be integrated synergistically in a developer-friendly code-based proof language to address many of the limitations of traditional SMT-based automated verification. Our approach enables proofs of more powerful properties to be carried out directly in a familiar programming environment rather than in separate proof assistant tools that often utilize low-level encodings of program semantics in annotations that are unfamiliar to industry developers. Because the proof language is implemented at the same level of abstraction as the programming language, using familiar syntax, our approach can provide easier-to-understand visualizations of rewriting/simplification steps that better align with the developer’s mental model of program execution (providing a better user experience). Our approach is implemented in the open-source Logika program verifier for Slang (a safety-critical subset of Scala). We evaluate the framework on a collection of examples, including libraries for high assurance embedded system data structures developed by engineers at Collins Aerospace.
