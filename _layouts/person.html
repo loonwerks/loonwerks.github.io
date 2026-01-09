@@ -39,7 +39,18 @@ layout: default
     <ul>
       {% for pub in sorted_publications %}
         {% if pub.authors contains page.author_key %}
+		
+		{% capture year %}{{ pub.date | date: '%Y' }}{% endcapture %}
+          {% if year != pyear %}
+            {% if pyear != '' %}
+      </ul>
+           {% endif %}
+      <b>{{ year }}</b>
+      <ul>
+         {% endif %}
+		
           {% include pub-ref.html %}
+		  {% assign pyear = year %}
         {% endif %}
       {% endfor %}
     </ul>
