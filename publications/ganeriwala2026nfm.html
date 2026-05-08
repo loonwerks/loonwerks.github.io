@@ -1,0 +1,11 @@
+---
+layout: publication
+authors: [P. Ganeriwala, C. Chambers, J. I. Lathrop, S. Bhattacharyya, J. Babar, S. B. Gilbert, I. Amundson, M. C. Dorneich, M. A. H. Khan]
+title: "Formal Analysis of Stochastic Cognitive Models: A Translation Framework from Soar to PRISM"
+info: NASA Formal Methods symposium (NFM 2026), May 2026
+link: "/publications/pdf/ganeriwala2026nfm.pdf"
+date: 2026-05-05 11:30:00
+projects: [MATRICS]
+---
+
+Cognitive architectures such as Soar are widely used to model human decision making in human–machine systems, but they are typically evaluated via simulation and therefore provide limited guarantees that do not cover all possible system behaviors. In this paper, we present a translation framework that compiles cognitive models in Soar into discrete-time Markov chains for analysis using the PRISM probabilistic model checker. The translation maps bounded abstractions of Soar’s working-memory elements to finite-domain PRISM variables, production rules to guards, and decision-cycle phases to an explicit control-state automaton. We demonstrate the approach on an augmented-reality surveillance case study, in which the translated Soar task model is synchronized with probabilistic modules capturing the evolution of cognitive attacks such as cybersickness, and its task-performance effects. The resulting PRISM models support quantitative verification of properties that depend on cognitive task progression and stochastic human-state dynamic
