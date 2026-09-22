@@ -1,0 +1,15 @@
+---
+layout: publication
+authors: [A. Tahat, D. Hardin, I. Amundson, J. Babar, T.A. Barclay, J. Liu, K. Hoech, D. Cofer]
+title: "Bridging Natural Language to Verified Implementation: A Neuro-Symbolic High-Assurance MBSE Pipeline in SysML v2"
+info: Digital Avionics Systems Conference (DASC), September 2026
+link: "/publications/pdf/tahat2026dasc.pdf"
+date: 2026-09-16 00:00:00
+projects: [INSPECTA]
+---
+
+The development of high-confidence avionics systems demands rigorous allocation and end-to-end traceability from requirements to implementation, yet current Model-Based Systems Engineering (MBSE) environments provide little support for automated, mathematically verified allocation and traceability. While Generative AI (GenAI) offers a potential automation boon, its deployment in safety-critical workflows is severely constrained by hallucinations, prohibitive token costs, scarcity of open-source domain data, and restrictions on fine-tuning state of-the-art proprietary models such as GPT-5.
+
+To address these barriers, we introduce a neuro-symbolic Spec–Code–Proof (SCP) copilot that integrates Codex-class agents into the INSPECTA formal methods pipeline, developed on the DARPA Pipelined Reasoning of Verifiers Enabling Robust Systems (PROVERS) program. The pipeline translates natural language requirements into SysML v2 models containing formal GUMBO contracts, generates HAMR infrastructure code, and discharges Logika proofs, ensuring properties are mathematically preserved in the implementation. To enable specialization without fine-tuning, we introduce a Meta-Rule learning methodology that functions as a verifiable surrogate for weight adaptation. Core to SCP is supervised self-healing and self-adaptation: successful in-context interactions are crystallized into persistent, expert-curated abstraction patterns, and Meta-Rules then drive a generate–verify–repair loop until the selected verification targets are satisfied within a given budget.
+
+We evaluate our methodology on the Isolette infant incubator system, a multi-subsystem HAMR/INSPECTA bench mark sourced from the FAA Requirements Engineering Man agement Handbook. Within the defined Isolette/HAMR target scope, our copilot achieved 100% code-level verification and an 18x adjusted increase in development task throughput compared to a prompt-only baseline that, lacking Meta-Rules, failed to produce verifiable artifacts. This demonstrates a practical path to certification-facing automation under strict data and model governance constraints, while scoping the claim to HAMR centric, toolchain-aware GUMBO repair; broader cross-system validation and additional rule books remain ongoing work.
