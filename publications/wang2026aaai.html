@@ -1,0 +1,11 @@
+---
+layout: publication
+authors: [K. Wang, N. P. Bhatt, C. Liu, J. Li, R. Chen, Y. Xi, T.J. Barclay, A. Velasquez, U. Topcu, Z. Wang]
+title: "Neurosymbolic LoRA: Why and When to Tune Weights vs. Rewrite Prompts"
+info: 40th Annual AAAI Conference on Artificial Intelligence (AAAI 2026), January 2026
+link: "/publications/pdf/wang2026aaai.pdf"
+date: 2026-01-20 00:00:00
+projects: [ANSR]
+---
+
+Large language models (LLMs) can be adapted either through numerical updates that alter model parameters or symbolic manipulations that work on discrete prompts or logical constraints. While numerical fine-tuning excels at injecting new factual knowledge, symbolic updates offer flexible control of style and alignment without retraining. We introduce a neurosymbolic LoRA framework that dynamically combines these two complementary strategies. Specifically, we present a unified monitoring signal and a reward-based classifier to decide when to employ LoRA for deeper factual reconstruction and when to apply TextGrad for token-level edits. Our approach remains memory-efficient by offloading the symbolic transformations to an external LLM only when needed. Additionally, the refined prompts produced during symbolic editing serve as high-quality, reusable training data, an important benefit in data-scarce domains like mathematical reasoning. Extensive experiments across multiple LLM backbones show that neurosymbolic LoRA consistently outperforms purely numerical or purely symbolic baselines, demonstrating superior adaptability and improved performance. Our findings highlight the value of interleaving numerical and symbolic updates to unlock a new level of versatility in language model fine-tuning.
