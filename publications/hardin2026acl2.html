@@ -1,0 +1,12 @@
+---
+layout: publication
+authors: [D. Hardin]
+title: "Arrayset Revisited"
+info: 20th International Workshop on the ACL2 Theorem Prover and its Applications (ACL2'26), November 2026
+link: "/publications/pdf/hardin2026acl2.pdf"
+date: 2026-11-16 00:00:00
+projects: [INSPECTA]
+---
+
+<p>Rust has gained significant popularity as a modern, type-safe, memory-safe, and formally analyzable programming language. We also see potential for Rust as a High-Level Synthesis (HLS) language, providing hardware/software co-assurance for critical systems, and have crafted a Rust subset for this purpose inspired by Russinoff’s Restricted Algorithmic C (RAC), a language we have imaginatively named Restricted Algorithmic Rust (RAR). In this paper, we revisit an array-backed set (technically, a multiset) data structure, suitable for hardware implementation and previously implemented using a number of formal and semi-formal tools. We describe a revised implementation of the RAR arrayset, which has allowed us to prove full functional correctness for arbitrary-sized backing arrays in ACL2. We compare and contrast the ACL2 formalization to that accomplished in Verus, an SMT-based verification tool employing requires/ensures annotations. Verus is used in various development efforts at Amazon Web Services, and has been integrated into the INSPECTA Model-Based Systems Engineering toolchain for the DARPA PROVERS program. On the PROVERS effort, we have adopted a hybrid approach, in which Verus establishes basic correctness properties, and an interactive theorem prover such as ACL2 is employed as needed to discharge more difficult theorems. We also report on progress toward hardware synthesis capability for the INSPECTA toolchain, allowing engineers to allocate verified system functionality to either hardware or software, and to revisit those allocations as differing product variants are developed from the same basic system model.
+</p>
